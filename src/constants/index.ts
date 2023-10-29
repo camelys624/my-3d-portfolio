@@ -25,7 +25,7 @@ import {
   threejs
 } from '../assets'
 
-export const navLinks = [
+export const navLinks: Array<{id: string, title: string}> = [
   {
     id: 'about',
     title: 'About'
