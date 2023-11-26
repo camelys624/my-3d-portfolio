@@ -4,7 +4,8 @@ import { motion } from 'framer-motion'
 import 'react-vertical-timeline-component/style.min.css';
 
 import { style } from '../style'
-import { experiences } from '@/constants'
+import { experiences as defaultExperiences } from '@/constants'
+import { experiences as zhExperiences } from '@/constants/Zh'
 import { SectionWrapper } from '@/hoc'
 import { textVariant } from '@/utils/motion'
 
@@ -41,12 +42,15 @@ const ExperienceCard = ({ experience }: any) => (
     </VerticalTimelineElement>
 )
 
-const Experience = () => {
+const Experience = (props: any) => {
+    const { translateToggle } = props
+    const experiences = translateToggle ? defaultExperiences : zhExperiences
+
     return (
         <>
             <motion.div variants={textVariant()}>
-                <p className={style.sectionSubText}>What I have done so far</p>
-                <h2 className={style.sectionHeadText}>Work Experience.</h2>
+                <p className={style.sectionSubText}>{translateToggle ? 'What I have done so far' : '我目前所做的工作'}</p>
+                <h2 className={style.sectionHeadText}>{translateToggle ? 'Work Experience.' : '工作经历'}</h2>
             </motion.div>
 
             <div className='mt-20 flex flex-col'>

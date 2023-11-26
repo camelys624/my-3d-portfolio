@@ -25,6 +25,12 @@ import {
   threejs
 } from '../assets'
 
+export const selfEvaluation = [
+  ['Hi, I\'m', 'Camel_y'],
+  'I\'m a front-end developer',
+  'I specialize in developing management systems, user interfaces and web applications.'
+]
+
 export const navLinks: Array<{id: string, title: string}> = [
   {
     id: 'about',

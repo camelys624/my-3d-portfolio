@@ -4,7 +4,8 @@ import { motion } from 'framer-motion'
 import { style } from '../style'
 import { github } from "@/assets"
 import { SectionWrapper } from "@/hoc"
-import { projects } from "@/constants"
+import { projects as defaultProjects } from "@/constants"
+import { projects as zhProjects } from "@/constants/Zh"
 import { fadeIn, textVariant } from '@/utils/motion'
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }: any) => {
@@ -57,12 +58,24 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
     )
 }
 
-const Works = () => {
+const Works = (props: any) => {
+    const { translateToggle } = props
+    const projects = translateToggle ? defaultProjects : zhProjects
+    const summary = translateToggle
+        ? `Following projects showcases my skills and experience through real-world examples of my work.
+        Each project is briefly described.
+        It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
+        `
+        : `以下项目通过实际工作案例展示了我的技能和经验。
+        每个项目都有简要介绍。
+        这反映了我解决复杂问题、使用不同技术和有效管理项目的能力。
+        `
+
     return (
         <>
             <motion.div variants={textVariant()}>
-                <p className={style.sectionSubText}>MY WORK</p>
-                <h2 className={style.sectionHeadText}>Projects.</h2>
+                <p className={style.sectionSubText}>{translateToggle ? 'MY WORK' : '我的作品'}</p>
+                <h2 className={style.sectionHeadText}>{translateToggle ? 'Projects.' : '项目'}</h2>
             </motion.div>
 
             <div className="w-full flex">
@@ -70,9 +83,7 @@ const Works = () => {
                     variants={fadeIn('', '', 0.1, 1)}
                     className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
                 >
-                    Following projects showcases my skills and experience through real-world examples of my work.
-                    Each project is briefly described with links to code repositories and live demos in it.
-                    It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
+                    {summary}
                 </motion.p>
             </div>
 

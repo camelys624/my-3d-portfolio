@@ -1,10 +1,14 @@
 import { motion } from 'framer-motion'
 import { style } from '../style'
 import { ComputersCanvas } from './canvas'
+import { selfEvaluation as defaultSelfEvaluation } from '@/constants'
+import { selfEvaluation as zhSelfEvaluation } from '@/constants/Zh'
 // import { heroBg } from '@/assets'
 // console.log(heroBg)
 
-export default function Hero() {
+export default function Hero(props: any) {
+    const selfEvaluation = props.translateToggle ? defaultSelfEvaluation : zhSelfEvaluation
+
     return (
         <section className="relative w-full h-screen max-auto">
             <div className={`${style.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
@@ -14,10 +18,10 @@ export default function Hero() {
                 </div>
 
                 <div>
-                    <h1 className={`${style.heroHeadText} text-white`}>Hi, I'm <span className='text-[#915eff]'>Camel_y</span></h1>
+                    <h1 className={`${style.heroHeadText} text-white`}>{selfEvaluation[0][0]} <span className='text-[#915eff]'>{selfEvaluation[0][1]}</span></h1>
                     <p className={`${style.heroSubText} mt-2 text-white-100`}>
-                        I develop 3D visuals, user <br className='sm:block hidden' />
-                        interfaces and web applications
+                        {selfEvaluation[1]} <br className='sm:block hidden' />
+                        {selfEvaluation[2]}
                     </p>
                 </div>
             </div>

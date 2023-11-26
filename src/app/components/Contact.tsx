@@ -6,8 +6,8 @@ import { EarthCanvas } from "./canvas"
 import { SectionWrapper } from "@/hoc"
 import { slideIn } from "@/utils/motion"
 
-const Contact = () => {
-    const formRef = useRef()
+const Contact = ({ translateToggle }:any) => {
+    const formRef = useRef(null)
     const [form, setForm] = useState({
         name: '',
         email: '',
@@ -28,8 +28,8 @@ const Contact = () => {
                 variants={slideIn('left', 'tween', 0.2, 0.1)}
                 className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
             >
-                <p className={style.sectionSubText}>Get in touch</p>
-                <h3 className={style.sectionHeadText}>Contact.</h3>
+                <p className={style.sectionSubText}>{ translateToggle ? 'Get in touch' : '联系我们' }</p>
+                <h3 className={style.sectionHeadText}>{ translateToggle ? 'Contact.' : '联系方式'}</h3>
 
                 <form
                     ref={formRef}
@@ -61,7 +61,7 @@ const Contact = () => {
                     <label className="flex flex-col">
                         <span className="text-white font-medium mb-4">Your Message</span>
                         <textarea
-                            rows="7"
+                            rows={7}
                             name="message"
                             value={form.message}
                             onChange={handleChange}

@@ -2,12 +2,14 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 import { style } from '../style'
-import { navLinks } from '../../constants'
-import { logo, menu, close } from '../../assets'
+import { navLinks as defaulNavLinks } from '../../constants'
+import { navLinks as zhNavLinks } from "../../constants/Zh"
+import { logo, menu, close, translate } from '../../assets'
 
-export default function Navbar() {
+export default function Navbar(props: any) {
     const [active, setActive] = useState('')
     const [toggle, setToggle] = useState(false)
+    const navLinks = props.translateToggle ? defaulNavLinks : zhNavLinks
 
     return (
         <nav
@@ -24,7 +26,7 @@ export default function Navbar() {
                 >
                     <img src={logo.src} alt="logo" className="w-9 h-9 object-contain" />
                     <p className="text-white text-[18px] font-bold cursor-pointer flex">
-                        Camel_Y &nbsp;<span className="sm:block hidden">| JavaScript Matery</span>
+                        Camel_Y
                     </p>
                 </Link>
                 <ul className="list-none hidden sm:flex flex-row gap-10">
@@ -42,6 +44,12 @@ export default function Navbar() {
                             </li>
                         ))
                     }
+                    <li
+                      className="text-secondary hover:text-white text-[18px] font-medium crursor-pointer"
+                      onClick={props.setToggle}
+                    >
+                        <img src={translate.src} alt="translate" className="w-[28px] h-[28px] object-contain" />
+                    </li>
                 </ul>
 
                 <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -71,6 +79,12 @@ export default function Navbar() {
                                     </li>
                                 ))
                             }
+                            <li
+                              className="text-secondary hover:text-white text-[18px] font-medium crursor-pointer"
+                              onClick={props.setToggle}
+                            >
+                                <img src={translate.src} alt="translate" className="w-[28px] h-[28px] object-contain" />
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -4,7 +4,7 @@ import { style } from '@/app/style'
 import { staggerContainer } from '@/utils/motion'
 
 export default (Component: any, idName: string) =>
-    function HOC() {
+    function HOC(props: any) {
         return (
             <motion.section
                 variants={staggerContainer()}
@@ -17,7 +17,7 @@ export default (Component: any, idName: string) =>
                     &nbsp;
                 </span>
 
-                <Component />
+                <Component {...props} />
             </motion.section> 
         )
     }

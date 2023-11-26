@@ -6,6 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import translate from "./g-translate.svg"
 import heroBg from "./herobg.png"
 
 import css from "./tech/css.png";
@@ -20,7 +21,11 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/three.png";
+import java from './Zh/java.png'
+import python from './Zh/python.png'
+import sql from './Zh/sql.png'
+import svn from './Zh/svn.png'
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -60,5 +65,10 @@ export {
   carrent,
   jobit,
   tripguide,
-  heroBg
+  heroBg,
+  java,
+  python,
+  sql,
+  svn,
+  translate
 };
