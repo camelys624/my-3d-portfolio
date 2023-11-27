@@ -2,11 +2,12 @@ import { Tilt } from "react-tilt"
 import { motion } from 'framer-motion'
 
 import { style } from '../style'
-import { github } from "@/assets"
-import { SectionWrapper } from "@/hoc"
-import { projects as defaultProjects } from "@/constants"
-import { projects as zhProjects } from "@/constants/Zh"
-import { fadeIn, textVariant } from '@/utils/motion'
+import { github } from "../assets"
+import { SectionWrapper } from "../hoc"
+import { projects as defaultProjects } from "../constants"
+import { projects as zhProjects } from "../constants/Zh"
+import { fadeIn, textVariant } from '../utils/motion'
+import React from "react"
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }: any) => {
     return (
@@ -23,7 +24,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             >
                 <div className="relative w-full h-[230px]">
                     <img
-                        src={image.src}
+                        src={image}
                         alt={name}
                         className="w-full h-full object-cover rounded-2xl"
                     />

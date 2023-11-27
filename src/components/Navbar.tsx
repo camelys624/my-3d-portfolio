@@ -2,18 +2,35 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 import { style } from '../style'
-import { navLinks as defaulNavLinks } from '../../constants'
-import { navLinks as zhNavLinks } from "../../constants/Zh"
-import { logo, menu, close, translate } from '../../assets'
+import { navLinks as defaulNavLinks } from '../constants'
+import { navLinks as zhNavLinks } from "../constants/Zh"
+import { logo, menu, close, translate } from '../assets'
+import React from "react"
 
 export default function Navbar(props: any) {
     const [active, setActive] = useState('')
     const [toggle, setToggle] = useState(false)
+    const [scrolled, setScrolled] = useState(false);
     const navLinks = props.translateToggle ? defaulNavLinks : zhNavLinks
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            if (scrollTop > 100) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
         <nav
-            className={`${style.paddingX} w-full flex justify-center item-center py-5 fixed top-0 z-20 bg-primary`}
+            className={`${style.paddingX} w-full flex justify-center item-center py-5 fixed top-0 z-20 ${scrolled ? 'bg-primary' : 'bg-transparent'}`}
         >
             <div className="w-full flex justify-between items-center max-w-7xl max-auto">
                 <Link
@@ -24,7 +41,7 @@ export default function Navbar(props: any) {
                         window.scrollTo(0, 0)
                     }}
                 >
-                    <img src={logo.src} alt="logo" className="w-9 h-9 object-contain" />
+                    <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
                     <p className="text-white text-[18px] font-bold cursor-pointer flex">
                         Camel_Y
                     </p>
@@ -45,16 +62,16 @@ export default function Navbar(props: any) {
                         ))
                     }
                     <li
-                      className="text-secondary hover:text-white text-[18px] font-medium crursor-pointer"
-                      onClick={props.setToggle}
+                        className="text-secondary hover:text-white text-[18px] font-medium crursor-pointer"
+                        onClick={props.setToggle}
                     >
-                        <img src={translate.src} alt="translate" className="w-[28px] h-[28px] object-contain" />
+                        <img src={translate} alt="translate" className="w-[28px] h-[28px] object-contain" />
                     </li>
                 </ul>
 
                 <div className="sm:hidden flex flex-1 justify-end items-center">
                     <img
-                        src={toggle ? close.src : menu.src}
+                        src={toggle ? close : menu}
                         alt="menu"
                         className="w-[28px] h-[28px] object-contain cursor-pointer"
                         onClick={() => setToggle(!toggle)}
@@ -80,8 +97,8 @@ export default function Navbar(props: any) {
                                 ))
                             }
                             <li
-                              className="text-secondary hover:text-white text-[18px] font-medium crursor-pointer"
-                              onClick={props.setToggle}
+                                className="text-secondary hover:text-white text-[18px] font-medium crursor-pointer"
+                                onClick={props.setToggle}
                             >
                                 <img src={translate.src} alt="translate" className="w-[28px] h-[28px] object-contain" />
                             </li>

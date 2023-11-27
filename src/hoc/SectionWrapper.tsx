@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
 
-import { style } from '@/app/style'
-import { staggerContainer } from '@/utils/motion'
+import { style } from '../style'
+import { staggerContainer } from '../utils/motion'
+import React from 'react'
 
 export default (Component: any, idName: string) =>
     function HOC(props: any) {

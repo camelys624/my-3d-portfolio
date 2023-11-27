@@ -3,8 +3,9 @@ import { motion } from "framer-motion"
 
 import { style } from '../style'
 import { EarthCanvas } from "./canvas"
-import { SectionWrapper } from "@/hoc"
-import { slideIn } from "@/utils/motion"
+import { SectionWrapper } from "../hoc"
+import { slideIn } from "../utils/motion"
+import React from "react"
 
 const Contact = ({ translateToggle }:any) => {
     const formRef = useRef(null)

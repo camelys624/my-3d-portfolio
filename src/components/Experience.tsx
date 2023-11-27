@@ -4,10 +4,11 @@ import { motion } from 'framer-motion'
 import 'react-vertical-timeline-component/style.min.css';
 
 import { style } from '../style'
-import { experiences as defaultExperiences } from '@/constants'
-import { experiences as zhExperiences } from '@/constants/Zh'
-import { SectionWrapper } from '@/hoc'
-import { textVariant } from '@/utils/motion'
+import { experiences as defaultExperiences } from '../constants'
+import { experiences as zhExperiences } from '../constants/Zh'
+import { SectionWrapper } from '../hoc'
+import { textVariant } from '../utils/motion'
+import React from 'react';
 
 const ExperienceCard = ({ experience }: any) => (
     <VerticalTimelineElement
@@ -18,7 +19,7 @@ const ExperienceCard = ({ experience }: any) => (
         icon={
             <div className='flex justify-center items-center w-fll h-full'>
                 <img
-                    src={experience.icon.src}
+                    src={experience.icon}
                     alt={experience.company_name}
                     className='w-[60%] h-[60%] object-contain'
                 />

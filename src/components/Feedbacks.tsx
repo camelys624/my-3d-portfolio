@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion'
 import { style } from '../style'
-import { SectionWrapper } from '@/hoc'
-import { fadeIn, textVariant } from '@/utils/motion'
-import { testimonials as defaultTestimonials } from '@/constants'
-import { testimonials as zhTestimonials } from '@/constants/Zh'
+import { SectionWrapper } from '../hoc'
+import { fadeIn, textVariant } from '../utils/motion'
+import { testimonials as defaultTestimonials } from '../constants'
+import { testimonials as zhTestimonials } from '../constants/Zh'
+import React from 'react'
 
 const FeedbackCard = ({ index, testimonial, name, designation, company, image }: any) => {
     return (
@@ -11,7 +12,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image }:
             variants={fadeIn('', 'spring', index * 0.5, 0.75)}
             className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
         >
-            <p className='text-white font-black text-[48px]'>&quot</p>
+            <p className='text-white font-black text-[48px]'>&quot;</p>
 
             <div className='mt-1'>
                 <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>

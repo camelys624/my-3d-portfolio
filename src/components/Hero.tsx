@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion'
 import { style } from '../style'
 import { ComputersCanvas } from './canvas'
-import { selfEvaluation as defaultSelfEvaluation } from '@/constants'
-import { selfEvaluation as zhSelfEvaluation } from '@/constants/Zh'
+import { selfEvaluation as defaultSelfEvaluation } from '../constants'
+import { selfEvaluation as zhSelfEvaluation } from '../constants/Zh'
+import React from 'react'
 // import { heroBg } from '@/assets'
 // console.log(heroBg)
 
