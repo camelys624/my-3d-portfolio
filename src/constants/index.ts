@@ -15,10 +15,9 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  beyondsoft,
+  kuiniu,
+  zhongzai,
   carrent,
   jobit,
   tripguide,
@@ -52,15 +51,15 @@ const services = [
     icon: web
   },
   {
-    title: 'React Native Developer',
+    title: 'Performance Optimizations',
     icon: mobile
   },
   {
-    title: 'Backend Developer',
+    title: 'Arithmetic',
     icon: backend
   },
   {
-    title: 'Content Creator',
+    title: 'UI/UX Designer',
     icon: creator
   }
 ]
@@ -122,55 +121,43 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
+    title: 'Frontend Developer',
+    company_name: 'chongqing kuiniu',
+    icon: kuiniu,
     iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    date: 'Jul 2018 - Feb 2019',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Developing in-house projects using Jquery, HTML, CSS and JavaScript.',
+      'Collaborate with team members such as project managers, UI designers, back-end development engineers and front-end development front-end development engineers to develop high-quality projects.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      'Managing project code with git.'
     ]
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
+    title: 'Frontend Developer',
+    company_name: 'zhongzai yuntu',
+    icon: zhongzai,
     iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    date: 'Mar 2019 - Oct 2029',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      'Developing in-house projects using VUE and other tools.',
+      'Collaborate with team members such as project managers, UI designers, back-end development engineers and front-end development front-end development engineers to develop high-quality projects.',
+      'Writing Custom VUE Components.',
+      'Managing project code with git.'
     ]
   },
   {
     title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
+    company_name: 'Beyond soft',
+    icon: beyondsoft,
     iconBg: '#383E56',
     date: 'Jan 2022 - Jan 2023',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
-    ]
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      'Developing in-house projects using VUE and other tools.',
+      'Collaborate with team members such as project managers, UI designers, back-end development engineers and front-end development front-end development engineers to develop high-quality projects.',
+      'Build front-end project architecture, write custom VUE components and write test cases.',
+      'Code review and collaborating with front-end colleagues to solve tough problems.',
+      'Managing project code with git.'
     ]
   }
 ]

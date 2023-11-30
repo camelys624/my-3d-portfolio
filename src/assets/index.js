@@ -27,10 +27,9 @@ import python from './Zh/python.png'
 import sql from './Zh/sql.png'
 import svn from './Zh/svn.png'
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import beyondsoft from "./company/beyondsoft.png";
+import kuiniu from "./company/kuiniu.png";
+import zhongzai from "./company/zhongzai.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -58,10 +57,9 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  beyondsoft,
+  kuiniu,
+  zhongzai,
   carrent,
   jobit,
   tripguide,

@@ -15,9 +15,9 @@ import {
   mongodb,
   figma,
   docker,
-  starbucks,
-  tesla,
-  shopify,
+  beyondsoft,
+  kuiniu,
+  zhongzai,
   carrent,
   jobit,
   tripguide,
@@ -51,15 +51,15 @@ const services = [
     icon: web
   },
   {
-    title: '臭打游戏的',
+    title: '性能优化',
     icon: mobile
   },
   {
-    title: 'Rust 启动',
+    title: '算法',
     icon: backend
   },
   {
-    title: 'Content Creator',
+    title: 'UI 实现',
     icon: creator
   }
 ]
@@ -123,7 +123,7 @@ const experiences = [
   {
     title: '前端开发工程师',
     company_name: '重庆夔牛',
-    icon: starbucks,
+    icon: kuiniu,
     iconBg: '#383E56',
     date: '2018/7 - 2019/2',
     points: [
@@ -135,7 +135,7 @@ const experiences = [
   {
     title: '前端开发工程师',
     company_name: '中再云图',
-    icon: tesla,
+    icon: zhongzai,
     iconBg: '#E6DEDD',
     date: '2019/3 - 2019/10',
     points: [
@@ -148,7 +148,7 @@ const experiences = [
   {
     title: '前端开发工程师',
     company_name: '博彦科技',
-    icon: shopify,
+    icon: beyondsoft,
     iconBg: '#383E56',
     date: '2019/11 - 至今',
     points: [
@@ -168,7 +168,7 @@ const testimonials = [
     name: '蘸糖',
     designation: '跑堂',
     company: '同福客栈',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg'
+    image: 'https://bkimg.cdn.bcebos.com/pic/8b13632762d0f703375f27a008fa513d2797c5d9?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto'
   },
   {
     testimonial:

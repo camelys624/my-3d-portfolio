@@ -62,7 +62,7 @@ export default function Navbar(props: any) {
                         ))
                     }
                     <li
-                        className="text-secondary hover:text-white text-[18px] font-medium crursor-pointer"
+                        className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"
                         onClick={props.setToggle}
                     >
                         <img src={translate} alt="translate" className="w-[28px] h-[28px] object-contain" />

@@ -9,6 +9,7 @@ import React from "react"
 
 const Contact = ({ translateToggle }:any) => {
     const formRef = useRef(null)
+    const inputRef = useRef(null)
     const [form, setForm] = useState({
         name: '',
         email: '',
@@ -61,12 +62,9 @@ const Contact = ({ translateToggle }:any) => {
                     </label>
                     <label className="flex flex-col">
                         <span className="text-white font-medium mb-4">Your Message</span>
-                        <textarea
-                            rows={7}
-                            name="message"
-                            value={form.message}
-                            onChange={handleChange}
-                            placeholder="what do you want to say?"
+                        <div
+                            ref={inputRef}
+                            contentEditable="true"
                             className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                         />
                     </label>

@@ -2,7 +2,8 @@ import { Tilt } from "react-tilt"
 import { motion } from 'framer-motion'
 
 import { style } from '../style'
-import { services } from "../constants"
+import { services as defaultServices } from "../constants"
+import { services as zhServices } from "../constants/Zh"
 import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
 import React from "react"
@@ -47,6 +48,7 @@ const About = (props: any) => {
         我学习能力强，善于解决实际问题，能与客户密切合作，创建高效、可扩展、用户友好的
         解决方案。让我们携手合作，将您的想法变为现实！
         `
+    const services = translateToggle ? defaultServices : zhServices
 
     return (
         <>
