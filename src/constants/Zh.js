@@ -168,7 +168,7 @@ const testimonials = [
     name: '蘸糖',
     designation: '跑堂',
     company: '同福客栈',
-    image: 'https://bkimg.cdn.bcebos.com/pic/8b13632762d0f703375f27a008fa513d2797c5d9?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto'
+    image: 'https://i04piccdn.sogoucdn.com/aa1c48bb7d215144'
   },
   {
     testimonial:
@@ -176,7 +176,7 @@ const testimonials = [
     name: '香芋',
     designation: '老板',
     company: '同福客栈',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg'
+    image: 'http://inews.gtimg.com/newsapp_bt/0/13320885279/641'
   },
   {
     testimonial:
@@ -184,7 +184,7 @@ const testimonials = [
     name: '老邢',
     designation: '捕头',
     company: '衙门',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg'
+    image: 'https://i04piccdn.sogoucdn.com/285ca91d16646e58'
   },
   {
     testimonial:
@@ -192,7 +192,7 @@ const testimonials = [
     name: '冬泳鸽怪',
     designation: '',
     company: '',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg'
+    image: 'https://i03piccdn.sogoucdn.com/ec37142f863f00eb'
   },
 ]
 
