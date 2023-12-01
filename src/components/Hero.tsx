@@ -3,9 +3,11 @@ import { style } from '../style'
 import { ComputersCanvas } from './canvas'
 import { selfEvaluation as defaultSelfEvaluation } from '../constants'
 import { selfEvaluation as zhSelfEvaluation } from '../constants/Zh'
-import React from 'react'
+import React, { memo } from 'react'
 // import { heroBg } from '@/assets'
 // console.log(heroBg)
+
+const MemoComputersCanvas = memo(ComputersCanvas)
 
 export default function Hero(props: any) {
     const selfEvaluation = props.translateToggle ? defaultSelfEvaluation : zhSelfEvaluation
@@ -27,7 +29,7 @@ export default function Hero(props: any) {
                 </div>
             </div>
             
-            <ComputersCanvas />
+            <MemoComputersCanvas />
 
             <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center item-center'>
                 <a href="#about">

@@ -5,7 +5,9 @@ import { style } from '../style'
 import { EarthCanvas } from "./canvas"
 import { SectionWrapper } from "../hoc"
 import { slideIn } from "../utils/motion"
-import React from "react"
+import React, {memo} from "react"
+
+const MemoEarthCanvas = memo(EarthCanvas)
 
 const Contact = ({ translateToggle }:any) => {
     const formRef = useRef(null)
@@ -81,7 +83,7 @@ const Contact = ({ translateToggle }:any) => {
                 variants={slideIn('right', 'tween', 0.2, 1)}
                 className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
             >
-                <EarthCanvas />
+                <MemoEarthCanvas />
             </motion.div>
         </div>
     )
