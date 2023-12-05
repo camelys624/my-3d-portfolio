@@ -117,10 +117,6 @@ const technologies = [
   {
     name: 'Ubuntu',
     icon: ubuntu
-  },
-  {
-    name: 'Java',
-    icon: java
   }
 ]
 

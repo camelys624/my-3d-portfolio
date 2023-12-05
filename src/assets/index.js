@@ -30,7 +30,7 @@ import elementui from './tech/element-ui.svg'
 import ckeditor from './tech/ckeditor.svg'
 import java from './tech/java.svg'
 import mysql from './tech/Mysql.svg'
-import ubuntu from './tech/ubuntu.png'
+import ubuntu from './tech/ubuntu.svg'
 
 import beyondsoft from "./company/beyondsoft.png";
 import kuiniu from "./company/kuiniu.png";
@@ -39,6 +39,7 @@ import zhongzai from "./company/zhongzai.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import wechat from './wechat.jpg'
 
 export {
   logo,
@@ -78,5 +79,6 @@ export {
   ckeditor,
   mysql,
   ubuntu,
-  translate
+  translate,
+  wechat
 };
