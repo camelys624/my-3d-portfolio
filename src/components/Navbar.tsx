@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
 import { style } from '../style'
 import { navLinks as defaulNavLinks } from '../constants'
@@ -61,6 +61,9 @@ export default function Navbar(props: any) {
                             </li>
                         ))
                     }
+                    <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
+                        <a href="https://camelys624.github.io/my-blog/">{props.translateToggle ? 'Blog' : '博客'}</a>
+                    </li>
                     <li
                         className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"
                         onClick={props.setToggle}
@@ -96,6 +99,9 @@ export default function Navbar(props: any) {
                                     </li>
                                 ))
                             }
+                            <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
+                                <a href="https://camelys624.github.io/my-blog/">{props.translateToggle ? 'Blog' : '博客'}</a>
+                            </li>
                             <li
                                 className="text-secondary hover:text-white text-[18px] font-medium crursor-pointer"
                                 onClick={props.setToggle}

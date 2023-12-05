@@ -3,25 +3,12 @@ import {
   backend,
   creator,
   web,
-  svn,
-  python,
-  typescript,
-  java,
-  sql,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  figma,
-  docker,
   beyondsoft,
   kuiniu,
   zhongzai,
   carrent,
   jobit,
-  tripguide,
-  threejs
+  tripguide
 } from '../assets'
 
 export const selfEvaluation = [
@@ -61,61 +48,6 @@ const services = [
   {
     title: 'UI 实现',
     icon: creator
-  }
-]
-
-const technologies = [
-  {
-    name: 'Java',
-    icon: java
-  },
-  {
-    name: 'Python',
-    icon: python
-  },
-  {
-    name: 'SQL',
-    icon: sql
-  },
-  {
-    name: 'TypeScript',
-    icon: typescript
-  },
-  {
-    name: 'React JS',
-    icon: reactjs
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind
-  },
-  {
-    name: 'Node JS',
-    icon: nodejs
-  },
-  {
-    name: 'MongoDB',
-    icon: mongodb
-  },
-  {
-    name: 'Three JS',
-    icon: threejs
-  },
-  {
-    name: 'SVN',
-    icon: svn
-  },
-  {
-    name: 'figma',
-    icon: figma
-  },
-  {
-    name: 'docker',
-    icon: docker
   }
 ]
 
@@ -176,7 +108,7 @@ const testimonials = [
     name: '香芋',
     designation: '老板',
     company: '同福客栈',
-    image: 'http://inews.gtimg.com/newsapp_bt/0/13320885279/641'
+    image: 'https://img.keaitupian.cn/newupload/09/1663744112466191.jpg'
   },
   {
     testimonial:
@@ -262,4 +194,4 @@ const projects = [
   }
 ]
 
-export { services, technologies, experiences, testimonials, projects }
+export { services, experiences, testimonials, projects }

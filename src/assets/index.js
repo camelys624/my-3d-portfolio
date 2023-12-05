@@ -22,10 +22,15 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/three.png";
-import java from './Zh/java.png'
 import python from './Zh/python.png'
 import sql from './Zh/sql.png'
 import svn from './Zh/svn.png'
+import vue from './tech/vue.svg'
+import elementui from './tech/element-ui.svg'
+import ckeditor from './tech/ckeditor.svg'
+import java from './tech/java.svg'
+import mysql from './tech/Mysql.svg'
+import ubuntu from './tech/ubuntu.png'
 
 import beyondsoft from "./company/beyondsoft.png";
 import kuiniu from "./company/kuiniu.png";
@@ -68,5 +73,10 @@ export {
   python,
   sql,
   svn,
+  vue,
+  elementui,
+  ckeditor,
+  mysql,
+  ubuntu,
   translate
 };

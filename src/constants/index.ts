@@ -3,18 +3,19 @@ import {
   backend,
   creator,
   web,
+  vue,
+  elementui,
+  ckeditor,
+  mysql,
+  ubuntu,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
   nodejs,
-  mongodb,
   git,
-  figma,
-  docker,
+  java,
   beyondsoft,
   kuiniu,
   zhongzai,
@@ -78,28 +79,32 @@ const technologies = [
     icon: javascript
   },
   {
-    name: 'TypeScript',
-    icon: typescript
+    name: 'Vue JS',
+    icon: vue
   },
   {
-    name: 'React JS',
-    icon: reactjs
+    name: 'Element UI',
+    icon: elementui
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind
+    name: 'CKEditor',
+    icon: ckeditor
   },
   {
     name: 'Node JS',
     icon: nodejs
   },
   {
-    name: 'MongoDB',
-    icon: mongodb
+    name: 'React JS',
+    icon: reactjs
+  },
+  {
+    name: 'MySQL',
+    icon: mysql
+  },
+  {
+    name: 'TypeScript',
+    icon: typescript
   },
   {
     name: 'Three JS',
@@ -110,12 +115,12 @@ const technologies = [
     icon: git
   },
   {
-    name: 'figma',
-    icon: figma
+    name: 'Ubuntu',
+    icon: ubuntu
   },
   {
-    name: 'docker',
-    icon: docker
+    name: 'Java',
+    icon: java
   }
 ]
 
@@ -138,7 +143,7 @@ const experiences = [
     company_name: 'zhongzai yuntu',
     icon: zhongzai,
     iconBg: '#E6DEDD',
-    date: 'Mar 2019 - Oct 2029',
+    date: 'Mar 2019 - Oct 2019',
     points: [
       'Developing in-house projects using VUE and other tools.',
       'Collaborate with team members such as project managers, UI designers, back-end development engineers and front-end development front-end development engineers to develop high-quality projects.',
@@ -151,7 +156,7 @@ const experiences = [
     company_name: 'Beyond soft',
     icon: beyondsoft,
     iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
+    date: 'Nov 2019 - Present',
     points: [
       'Developing in-house projects using VUE and other tools.',
       'Collaborate with team members such as project managers, UI designers, back-end development engineers and front-end development front-end development engineers to develop high-quality projects.',
@@ -177,7 +182,7 @@ const testimonials = [
     name: 'xiangyu',
     designation: 'Boss',
     company: 'Tongfu hotal',
-    image: 'http://inews.gtimg.com/newsapp_bt/0/13320885279/641'
+    image: 'https://img.keaitupian.cn/newupload/09/1663744112466191.jpg'
   },
   {
     testimonial:
